@@ -1,1 +1,241 @@
-/* место для вашего кода */
+.header {
+  width: 1052px;
+  height: 105px;
+  margin: 92px 24px 96px 24px;
+  display: grid;
+  grid-template-columns: 1fr 148px 1fr;
+  align-items: center;
+  font-size: 18px;
+}
+
+.header__menu {
+  width: 391.48px;
+  height: 22px;
+  text-transform: lowercase;
+  line-height: 21px;
+  margin-left: 25px; /*Pixel Perfect*/
+  margin-top: 8px; /*Pixel Perfect*/
+}
+.header__links-list {
+  display: flex;
+  justify-content: space-between;
+}
+.header__links-list-item {
+  list-style: circle;
+}
+.header__links-list-item_no-bullit {
+  list-style: none;
+}
+.header__link_active {
+  text-decoration: none;
+}
+.header__link {
+  text-decoration: underline;
+  text-underline-offset: 0.23em;
+  height: 21px;
+}
+.header__logo {
+  width: 148px;
+  height: 105px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__logo-image {
+  width: 138px;
+  height: 113px;
+  top: 2.79px;
+  left: 11.39px;
+  border: 6px 0px 0px 0px;
+}
+.address {
+  font-style: normal;
+  display: flex;
+  justify-content: end;
+  margin-right: 24px; /*Pixel Perfect*/
+}
+.header__address {
+  width: 240.52px;
+  height: 98px;
+}
+
+.header__address a {
+  padding-top: 5px;
+  height: 23px; /*Pixel Perfect*/
+  text-decoration: underline;
+  display: block;
+  text-underline-offset: 0.23em; /*Pixel Perfect*/
+}
+.header__address p {
+  width: 237px;
+  height: 49px; /*Pixel Perfect*/
+  line-height: 29px;
+  text-decoration: none;
+}
+
+.cover {
+  background-image: url("../images/cover.jpg");
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgb(0 0 0 / 0.6);
+}
+
+.cover__container {
+  padding: 165px 50px 0;
+  position: relative;
+}
+
+.cover__title {
+  width: 1000px;
+  height: 355px;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 1.15;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: #fff;
+  z-index: 1;
+}
+
+.aligned-text {
+  display: block;
+}
+
+.aligned-text_center {
+  text-align: center;
+  margin-top: 12px;
+}
+
+.aligned-text_right {
+  text-align: right;
+  margin-top: 5px;
+}
+
+.letter-spacing-extended {
+  letter-spacing: 0.6em;
+}
+
+.no-letter-spacing {
+  letter-spacing: 0;
+}
+
+.cover__description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  padding-bottom: 51px;
+  padding: 135px 50px 51px 68px;
+  z-index: 3;
+}
+
+.cover__description-text {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.27273;
+  text-transform: uppercase;
+  word-spacing: 0.83em;
+  z-index: 1;
+  margin-left: 10px; /*Pixel Perfect*/
+}
+
+.bet-button {
+  width: 256px;
+  height: 51px;
+  font-weight: 500;
+  font-size: 22px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  background-color: transparent;
+  border: #fff solid 2px;
+  z-index: 1;
+}
+
+.lots {
+}
+.lots__heading {
+  width: 121px;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 46.96px;
+  padding-top: 179px;
+  padding-left: 64px;
+  padding-bottom: 27px;
+  text-transform: uppercase;
+}
+.lots__card-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding-left: 0;
+  margin: 0 24px;
+  gap: 26px;
+}
+.lots__card-list-item {
+  flex: 0 0 31.6%;
+  outline: 1px solid;
+}
+
+.card-link {
+  text-decoration: none;
+}
+
+.card {
+  min-height: 100%;
+  background-position: -100px 0px;
+  background-size: cover;
+}
+.card_type_film {
+  background-image: url(../images/card-lot-01.jpg);
+}
+.card__title {
+  font-family: Raleway;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 26.4px;
+  text-align: left;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 51px 40px 0px 40px;
+}
+
+.card__text {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #fff;
+  padding: 0 40px 48px 40px;
+}
+
+.card_type_film .card__title {
+  padding-bottom: 238px;
+}
+
+.card_type_picture .card__title {
+  padding-bottom: 90px;
+}
+
+.card_type_book {
+  background-image: url(../images/card-lot-02.jpg);
+}
+.card_type_picture {
+  background-image: url(../images/card-lot-03.jpg);
+}
+.lots__look-more-link {
+  display: block;
+  padding: 30px 102px 48px 64px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23.48px;
+}
